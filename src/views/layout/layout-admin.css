@@ -1,0 +1,36 @@
+.admin-layout {
+  display: flex;
+  height: 100vh;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #20232a;
+  color: white;
+}
+
+.sidebar .menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  border: none;
+  background: none;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sidebar .menu-item:hover,
+.sidebar .menu-item.active {
+  background-color: #30363d;
+}
+
+.sidebar .menu-item-icon {
+  margin-right: 8px;
+}

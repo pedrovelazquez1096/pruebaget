@@ -1,0 +1,260 @@
+/* Variables y reset */
+:root {
+  --primary-orange: #f8791d;
+  --gray-bg: #c9c9c9;
+  --dark-gray: #525252;
+  --black: #000000;
+  --white: #ffffff;
+  --font-main: 'Inter', sans-serif;
+  --font-alt: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+}
+
+.desktop6-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(203, 203, 203, 0.8) 44%, rgba(255, 255, 255, 0.8) 100%);
+}
+
+.desktop6-header2 {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: var(--gray-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.desktop6-company {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.desktop6-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.desktop6-text11 {
+  font-family: var(--font-alt);
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--primary-orange);
+}
+
+.desktop6-text14 {
+  color: var(--dark-gray);
+}
+
+.desktop6-text17 {
+  font-size: 1rem;
+  color: var(--black);
+}
+
+.desktop6-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.desktop6-text18,
+.desktop6-text19 {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.desktop6-primarybutton {
+  padding: 0.5rem 1rem;
+  background-color: var(--black);
+  border-radius: 8px;
+  color: var(--white);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.desktop6-text10 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.desktop6-sucursal {
+  width: 90%;
+  max-width: 1200px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.desktop6-sucursal-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.desktop6-text39 {
+  font-size: 1rem;
+  max-width: 600px;
+  color: var(--black);
+}
+
+.desktop6-text40 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.desktop6-frame2147220671 {
+  margin: 2rem auto;
+  background-color: var(--primary-orange);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 700px;
+}
+
+.desktop6-text41 {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.desktop6-footer {
+  width: 100%;
+  padding: 2rem;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.desktop6-frame2147220663 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desktop6-text21 {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--primary-orange);
+}
+
+.desktop6-text25 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--black);
+}
+
+.desktop6-button-list {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.desktop6-button-list img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.88;
+}
+
+.desktop6-group54 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.desktop6-group39,
+.desktop6-group40 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.desktop6-text30,
+.desktop6-text35 {
+  font-weight: 700;
+}
+
+.desktop6-group41,
+.desktop6-group42 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.desktop6-group41 li,
+.desktop6-group42 li {
+  font-size: 1rem;
+  color: var(--black);
+}
+
+.desktop6-text36 {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .desktop6-sucursal {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .desktop6-buttons {
+    justify-content: center;
+  }
+
+  .desktop6-group54 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .desktop6-frame2147220671 {
+    padding: 1rem;
+    margin-bottom: 8rem;
+  }
+
+  .desktop6-text10 {
+    font-size: 1.25rem;
+  }
+
+  .desktop6-text40 {
+    font-size: 1.25rem;
+  }
+
+  .desktop6-text41 {
+    font-size: 1.25rem;
+  }
+}

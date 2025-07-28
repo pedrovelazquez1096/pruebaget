@@ -1,0 +1,119 @@
+.testimonios-page {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #cbcbcbcc 0%, #ffffffcc 100%);
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonios-main {
+  padding: 60px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.testimonios-title {
+  font-size: 48px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  color: #f8791d;
+  margin-bottom: 40px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.testimonio-item {
+  background-color: #fff;
+  border-left: 5px solid #f8791d;
+  border-radius: 20px;
+  padding: 32px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.testimonio-item::before {
+  content: "“";
+  font-size: 60px;
+  color: #f8791d;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  opacity: 0.3;
+}
+
+.testimonio-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+
+.testimonio-comentario {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 24px;
+  line-height: 1.6;
+  font-style: italic;
+  padding-left: 10px;
+}
+
+.testimonio-nombre {
+  font-size: 17px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+.testimonio-ciudad {
+  font-size: 15px;
+  color: #6b6b6b;
+  font-style: italic;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .testimonios-title {
+    font-size: 36px;
+  }
+
+  .testimonio-comentario {
+    font-size: 16px;
+  }
+
+  .testimonio-nombre,
+  .testimonio-ciudad {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .testimonios-main {
+    padding: 40px 16px;
+  }
+
+  .testimonios-title {
+    font-size: 28px;
+  }
+
+  .testimonio-item {
+    padding: 24px;
+  }
+}

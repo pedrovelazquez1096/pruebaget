@@ -1,0 +1,333 @@
+:root {
+  --primary-color: #f8791d;
+  --secondary-color: #545454;
+  --dark-color: #2c2c2c;
+  --light-gray: #d9d9d9;
+  --font-main: 'Inter', sans-serif;
+  --font-alt: 'Poppins', sans-serif;
+}
+
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: var(--font-main);
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  color: #1a1a1a;
+}
+
+/* Layout Containers */
+.desktop-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  overflow-x: hidden;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(225, 225, 225, 0.8) 44%, rgba(150, 150, 150, 0.8) 100%);
+}
+
+.desktop-desktop {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+/* Header */
+.desktop-header2 {
+  width: 100%;
+  padding: 1.5rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(201, 201, 201, 1);
+}
+
+.desktop-company {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.desktop-logo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.625rem;
+}
+
+.desktop-text10 {
+  font-size: 2rem;
+  font-style: italic;
+  font-family: var(--font-alt);
+  font-weight: 700;
+  line-height: 0.5; /* o prueba con 1.0 o incluso menos */
+}
+
+
+.desktop-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.desktop-buttons > * {
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--dark-color);
+}
+
+.desktop-text17,
+.desktop-text19 {
+  text-decoration: underline;
+}
+
+.desktop-text11,
+.desktop-text12,
+.desktop-text14,
+.desktop-text15,
+.desktop-text23,
+.desktop-text38 {
+  color: var(--primary-color);
+}
+
+.desktop-text13,
+.desktop-text25,
+.desktop-text40 {
+  color: var(--secondary-color);
+}
+/* Estilo del formulario de registro igual al de sesión */
+.desktop-form-contact {
+  margin: 30px auto;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  border: 1.5px solid #d0d0d0;
+  border-radius: 13px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Contenedor del formulario interior */
+.desktop-form-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Campos de entrada */
+.desktop-input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.desktop-input-field label {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  color: #000000;
+}
+
+.desktop-input {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  padding: 14px 18px;
+  border: 1.5px solid #cccccc;
+  border-radius: 8px;
+  background-color: #fefefe;
+  transition: border 0.3s, box-shadow 0.3s;
+  color: #1a1a1a;
+}
+
+.desktop-input::placeholder {
+  color: #aaaaaa;
+  font-style: italic;
+}
+
+.desktop-input:focus {
+  outline: none;
+  border-color: #f8791d;
+  box-shadow: 0 0 0 3px rgba(248, 121, 29, 0.15);
+}
+
+/* Botones */
+.desktop-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+  cursor: pointer;
+}
+
+/* Botón principal (confirmar) */
+.desktop-button.primary {
+  background-color: #2c2c2c;
+  color: white;
+  border: none;
+}
+
+.desktop-button.primary:hover {
+  background-color: #1f1f1f;
+}
+
+/* Botón secundario (regresar) */
+.desktop-button.secondary {
+  background-color: transparent;
+  color: #2c2c2c;
+  border: 1.5px solid #2c2c2c;
+}
+
+.desktop-button.secondary:hover {
+  background-color: #f2f2f2;
+}
+
+/* Botón de Google */
+.desktop-button.google-button {
+  background-color: transparent;
+  color: #2c2c2c;
+  border: 1.5px solid #2c2c2c;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: -16px;
+}
+
+.desktop-button.google-button:hover {
+  background-color: #f2f2f2;
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .desktop-header2 {
+    padding: 1rem 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .desktop-buttons {
+    justify-content: center;
+  }
+
+  .desktop-group54 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .desktop-group5 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .desktop-text37 {
+    font-size: 2.5rem;
+  }
+
+  .desktop-text41 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-header2 {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .desktop-form-contact {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  .desktop-text48 {
+    font-size: 1.5rem;
+    margin: 1.5rem auto;
+  }
+
+  .desktop-group5 {
+    gap: 1rem;
+  }
+
+  .desktop-text37 {
+    font-size: 2rem;
+  }
+
+  .desktop-text41 {
+    font-size: 1rem;
+  }
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background-color: #ffffff;
+  color: #2c2c2c;
+  border: 1px solid var(--light-gray);
+  transition: background-color 0.3s ease;
+}
+
+.google-button:hover {
+  background-color: #f1f1f1;
+}
+
+.google-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.desktop-footer {
+  width: 100vw; /* ancho total de la ventana */
+  margin-left: calc(-50vw + 50%); /* para alinearlo con el borde izquierdo aunque esté dentro de un contenedor centrado */
+  background-color: var(--light-gray);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-brand,
+  .footer-links {
+    align-items: center;
+  }
+
+  .footer-section {
+    align-items: center;
+  }
+}

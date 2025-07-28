@@ -1,0 +1,275 @@
+/* =========================
+   CSS ACTUALIZADO: CALCULADORA PRIMERO
+   ========================= */
+
+.desktop4-container {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #cbcbcbcc 44%, #ffffffcc 100%);
+}
+
+.desktop4-header2 {
+  background-color: #c9c9c9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 64px;
+}
+
+.desktop4-company {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.desktop4-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+}
+
+.desktop4-text12 {
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  color: #f8791d;
+}
+
+.desktop4-text15 {
+  color: #525252;
+}
+
+.desktop4-text18 {
+  display: block;
+  font-size: 16px;
+  color: #000;
+}
+
+.desktop4-buttons {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.desktop4-buttons span,
+.desktop4-buttons button span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+}
+
+.desktop4-primarybutton {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.desktop4-main {
+  padding: 2rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* =============================
+   CALCULADORA PRIMERO
+   ============================= */
+
+.desktop4-cotiza {
+  background-color: #d9d9d9;
+  padding: 2rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  order: 1;
+}
+
+.desktop4-subtitulo {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.desktop4-input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.desktop4-input-field input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.desktop4-button {
+  background-color: #f8791d;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.desktop4-button:hover {
+  background-color: #d46213;
+}
+
+.desktop4-requisitos h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.desktop4-requisitos ul {
+  padding-left: 1.25rem;
+  line-height: 1.5;
+}
+
+/* =============================
+   GALERÍA DE IMÁGENES
+   ============================= */
+
+.desktop4-galeria {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 1rem 0;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  order: 2;
+}
+
+.desktop4-galeria img {
+  height: 160px;
+  width: auto;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.desktop4-galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* =============================
+   INFORMACIÓN VEHÍCULO
+   ============================= */
+
+.desktop4-descripcion {
+  background-color: #e6e6e6;
+  padding: 2rem;
+  border-radius: 16px;
+  order: 3;
+}
+
+.desktop4-descripcion h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.desktop4-texto-descripcion {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.desktop4-especificaciones {
+  list-style: none;
+  padding-left: 1rem;
+  font-size: 0.95rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.5rem;
+}
+
+/* =============================
+   FOOTER
+   ============================= */
+
+.desktop4-footer {
+  background-color: #d9d9d9;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.footer-brand span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f8791d;
+}
+
+.desktop4-button-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  display: block;
+  color: #000;
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.footer-links strong {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .desktop4-header2,
+  .footer-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .desktop4-main {
+    padding: 1rem;
+  }
+
+  .desktop4-galeria img {
+    height: 120px;
+  }
+}

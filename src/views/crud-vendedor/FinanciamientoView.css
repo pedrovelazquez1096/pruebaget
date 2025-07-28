@@ -1,0 +1,617 @@
+/* FinanciamientoView.css - Estilos para FinanciamientoView */
+
+/* Reset y configuración básica */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fin-min-h-screen {
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* Fondo con gradiente */
+.fin-bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, #eff6ff, #e0e7ff);
+}
+
+/* Contenedor principal */
+.fin-max-w-7xl {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fin-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fin-p-4 {
+  padding: 1rem;
+}
+
+/* Tarjetas y contenedores */
+.fin-bg-white {
+  background-color: #fff;
+}
+
+.fin-rounded-xl {
+  border-radius: 1rem;
+}
+
+.fin-shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.fin-p-6 {
+  padding: 1.5rem;
+}
+
+.fin-mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+/* Flexbox y alineación */
+.fin-flex {
+  display: flex;
+}
+
+.fin-items-center {
+  align-items: center;
+}
+
+.fin-justify-between {
+  justify-content: space-between;
+}
+
+.fin-space-x-3 > * + * {
+  margin-left: 0.75rem;
+}
+
+.fin-space-x-2 > * + * {
+  margin-left: 0.5rem;
+}
+
+.fin-space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+.fin-space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.fin-space-y-3 > * + * {
+  margin-top: 0.75rem;
+}
+
+/* Botones */
+.fin-bg-blue-500 {
+  background-color: #3498db;
+}
+
+.fin-bg-blue-500:hover {
+  background-color: #2980b9;
+}
+
+.fin-text-white {
+  color: #fff;
+}
+
+.fin-px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.fin-py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.fin-rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.fin-font-medium {
+  font-weight: 500;
+}
+
+.fin-transition-colors {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.fin-bg-gray-100 {
+  background-color: #f3f4f6;
+}
+
+.fin-bg-gray-100:hover {
+  background-color: #e5e7eb;
+}
+
+.fin-text-gray-700 {
+  color: #374151;
+}
+
+.fin-w-4 {
+  width: 1rem;
+}
+
+.fin-h-4 {
+  height: 1rem;
+}
+
+.fin-mr-2 {
+  margin-right: 0.5rem;
+}
+
+.fin-inline {
+  display: inline;
+}
+
+.fin-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Iconos y contenedores de iconos */
+.fin-p-3 {
+  padding: 0.75rem;
+}
+
+.fin-rounded-full {
+  border-radius: 9999px;
+}
+
+.fin-w-6 {
+  width: 1.5rem;
+}
+
+.fin-h-6 {
+  height: 1.5rem;
+}
+
+.fin-w-5 {
+  width: 1.25rem;
+}
+
+.fin-h-5 {
+  height: 1.25rem;
+}
+
+.fin-text-blue-500 {
+  color: #3498db;
+}
+
+.fin-text-green-500 {
+  color: #2ecc71;
+}
+
+.fin-text-purple-500 {
+  color: #9b59b6;
+}
+
+.fin-text-orange-500 {
+  color: #f39c12;
+}
+
+.fin-text-gray-400 {
+  color: #9ca3af;
+}
+
+.fin-text-blue-600 {
+  color: #2563eb;
+}
+
+/* Tipografía */
+.fin-text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.fin-font-bold {
+  font-weight: 700;
+}
+
+.fin-text-gray-800 {
+  color: #1f2937;
+}
+
+.fin-text-gray-600 {
+  color: #4b5563;
+}
+
+.fin-text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.fin-font-semibold {
+  font-weight: 600;
+}
+
+.fin-text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.fin-text-gray-500 {
+  color: #6b7280;
+}
+
+.fin-text-red-600 {
+  color: #e74c3c;
+}
+
+/* Grid layout */
+.fin-grid {
+  display: grid;
+}
+
+.fin-grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .fin-md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .fin-lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.fin-gap-6 {
+  gap: 1.5rem;
+}
+
+.fin-gap-2 {
+  gap: 0.5rem;
+}
+
+.fin-grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .fin-md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+
+.fin-gap-4 {
+  gap: 1rem;
+}
+
+/* Estilos de tarjetas de vehículos */
+.fin-aspect-w-16 {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.fin-aspect-h-9 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.fin-overflow-hidden {
+  overflow: hidden;
+}
+
+.fin-h-48 {
+  height: 12rem;
+}
+
+.fin-object-cover {
+  object-fit: cover;
+}
+
+.fin-group:hover .fin-group-hover\:scale-105 {
+  transform: scale(1.05);
+}
+
+.fin-transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.fin-duration-300 {
+  transition-duration: 300ms;
+}
+
+.fin-border {
+  border-width: 1px;
+}
+
+
+.fin-cursor-pointer {
+  cursor: pointer;
+}
+
+.fin-group-hover\:shadow-lg:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos de inputs y formularios */
+.fin-relative {
+  position: relative;
+}
+
+.fin-absolute {
+  position: absolute;
+}
+
+.fin-left-3 {
+  left: 0.75rem;
+}
+
+.fin-top-3 {
+  top: 0.75rem;
+}
+
+.fin-w-full {
+  width: 100%;
+}
+
+.fin-pl-10 {
+  padding-left: 2.5rem;
+}
+
+.fin-pr-4 {
+  padding-right: 1rem;
+}
+
+.fin-border-gray-300 {
+  border-color: #d1d5db;
+}
+
+.fin-focus\:ring-2:focus {
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.fin-focus\:ring-blue-500:focus {
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+}
+
+
+.fin-focus\:border-transparent:focus {
+  border-color: transparent;
+}
+
+.fin-mt-1 {
+  margin-top: 0.25rem;
+}
+
+.fin-mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.fin-block {
+  display: block;
+}
+
+.fin-text-sm.fin-font-medium {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Estilos de opciones de mensualidad */
+.fin-border-2 {
+  border-width: 2px;
+}
+
+.fin-border-gray-200 {
+  border-color: #e5e7eb;
+}
+
+.fin-border-blue-500 {
+  border-color: #3498db;
+}
+
+.fin-bg-blue-50 {
+  background-color: #eff6ff;
+}
+
+.fin-hover\:border-gray-300:hover {
+  border-color: #d1d5db;
+}
+
+/* Estilos de resumen */
+.fin-py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.fin-border-b {
+  border-bottom-width: 1px;
+}
+
+.fin-border-gray-100 {
+  border-color: #f3f4f6;
+}
+
+.fin-text-green-600 {
+  color: #2ecc71;
+}
+
+/* Estilos de historial */
+.fin-mt-4 {
+  margin-top: 1rem;
+}
+
+.fin-border {
+  border-width: 1px;
+}
+
+.fin-border-gray-200 {
+  border-color: #e5e7eb;
+}
+
+.fin-p-4 {
+  padding: 1rem;
+}
+
+.fin-mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.fin-text-blue-600 {
+  color: #2563eb;
+}
+
+.fin-hover\:bg-blue-50:hover {
+  background-color: #eff6ff;
+}
+
+.fin-text-red-600 {
+  color: #e74c3c;
+}
+
+.fin-hover\:bg-red-50:hover {
+  background-color: #fef2f2;
+}
+
+.fin-text-center {
+  text-align: center;
+}
+
+.fin-py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.fin-w-12 {
+  width: 3rem;
+}
+
+.fin-h-12 {
+  height: 3rem;
+}
+
+.fin-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fin-mb-4 {
+  margin-bottom: 1rem;
+}
+
+.fin-text-gray-300 {
+  color: #d1d5db;
+}
+
+/* Estilos para el contenedor de búsqueda */
+.fin-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.fin-gap-4 {
+  gap: 1rem;
+}
+
+.fin-flex-1 {
+  flex: 1 1 0%;
+}
+
+.fin-min-w-64 {
+  min-width: 16rem;
+}
+
+/* Estilos para la animación de PDF */
+.fin-pdf-generating {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.fin-pdf-generating:before {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Estilos para imágenes */
+.fin-bottom-2 {
+  bottom: 0.5rem;
+}
+
+.fin-right-2 {
+  right: 0.5rem;
+}
+
+.fin-bg-opacity-90 {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.fin-hover\:bg-opacity-100:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
+.fin-py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.fin-mr-1 {
+  margin-right: 0.25rem;
+}
+
+/* Barra de desplazamiento personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .fin-lg\:grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .fin-md\:grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+}

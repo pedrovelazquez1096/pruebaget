@@ -1,0 +1,108 @@
+.footer {
+  background-color: #d9d9d9;
+  width: 100%;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  flex: 1 1 250px;
+}
+
+.company-names {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+}
+
+.text-orange {
+  color: #f8791d;
+}
+
+.text-dark {
+  color: #525252;
+}
+
+.financiamientoo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #000;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.9;
+  transition: transform 0.2s;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+.footer-links {
+  display: flex;
+  gap: 3rem;
+  flex: 2 1 500px;
+  flex-wrap: wrap;
+}
+
+.links-column h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.links-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links-column li {
+  margin-bottom: 0.4rem;
+}
+
+.links-column a {
+  color: #000;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.links-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 2rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #aaa;
+  margin-top: 2rem;
+}
